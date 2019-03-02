@@ -1,8 +1,15 @@
-import React from "react";
-import OmdbContainer from "./components/OmdbContainer";
+import React, { Component } from 'react';
+import DisplayPage from "./components/DisplayPage";
+import './App.css';
 
-function App() {
-  return <OmdbContainer />;
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <DisplayPage />
+      </div>
+    );
+  }
 }
 
 export default App;
